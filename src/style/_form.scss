@@ -1,0 +1,69 @@
+.form-container {
+  margin: 70px 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: left;
+  padding: 30px 0;
+  background: #f8f8f8;
+  border-radius: 10px;
+  h2 {
+    font-size: 1.5em;
+    background: #c8e2c1;
+    padding: 8px 20px;
+  }
+  .form {
+    font-size: 1.2rem;
+    position: relative;
+    margin: 0 auto;
+    padding: 30px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+    input,
+    button,
+    select {
+      border: 1px solid lightgray;
+      border-radius: 8px;
+      font-size: 1rem;
+      padding: 8px;
+      letter-spacing: 0.1rem;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    button {
+      cursor: pointer;
+      background: #c8e2c1;
+      font-size: 1.1rem;
+      transition: 0.3s;
+      text-transform: uppercase;
+      width: min-content;
+      margin-left: auto;
+      white-space: nowrap;
+      padding: 18px 30px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .message {
+      position: absolute;
+      color: rgba(234, 156, 0, 0.936);
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    border-radius: 0;
+  }
+}

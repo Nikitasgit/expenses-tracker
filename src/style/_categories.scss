@@ -1,0 +1,47 @@
+.categories-container {
+  width: 100%;
+  h2 {
+    padding: 20px 40px;
+    width: min-content;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2rem;
+    border-radius: 10px;
+    margin: 30px auto;
+  }
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    h3 {
+      padding: 5px;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+    .category-card {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      background: #c8e2c1;
+      border-radius: 8px;
+      width: calc(50% - 20px);
+      border: 1px solid lightgrey;
+
+      ul {
+        height: 300px;
+        padding: 10px;
+        background: #fbfbfb;
+        overflow-y: auto;
+      }
+      .category-total {
+        font-size: 1.2rem;
+        padding: 5px;
+        border-top: 1px solid lightgray;
+      }
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 800px) {
+        border-radius: 0;
+      }
+    }
+  }
+}
